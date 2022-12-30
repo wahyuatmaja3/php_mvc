@@ -1,0 +1,7 @@
+Nama: Tanya
+Jenis: Social Media
+Konsep Detail:
+
+  Seperti Quora, Web ini akan berisi Pertanyaan dan jawaban dari user
+User bisa memberi pertanyaan dan juga jawaban
+

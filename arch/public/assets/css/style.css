@@ -1,0 +1,724 @@
+/* General */
+:root {
+	--color-1: #463f3a;
+	--color-2: #8a817c;
+	--color-3: #bcb8b1;
+	--color-4: #f4f3ee;
+	--color-5: #e0afa0;
+	--font-logo: 'Papyrus';
+	--font-head: 'Book antiqua';
+	--font: 'arial';
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: var(--font);
+	color: var(--color-1);
+}
+
+.base {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: calc(100% - 80px);
+	padding: 0 80px;
+}
+
+
+/* LANDING ================================================================================================== */
+.landing {
+	width: 100%;
+	height: 125vh;
+	background-image: url(../../../public/assets/img/landing-banner.jpg);
+	background-size: contain;
+	background-position: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.landing .container {
+	width: 650px;
+	height: 95vh;
+	background-color: #fff;
+	padding: 40px ;
+}
+
+.landing .container .top {
+	width: 100%;
+	height: 25%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.landing .container .top img,
+.landing .container .top h1,
+.landing .container .top p {
+	width: 100%;
+	text-align: center;
+	color: var(--color-1);
+}
+
+.landing .container .top img {
+	width: 50px;
+	height: 50px;
+	margin-bottom: 4px;
+}
+
+.landing .container .top h1 {
+	font-size: 28px;
+	font-family: var(--font-logo);
+	margin-bottom: -5px;
+}
+
+.landing .container .top p {
+	font-size: 18px;
+	font-family: var(--font-head);
+}
+
+.landing .container .content {
+	width: 100%;
+	height: 75%;
+	display: flex;
+	padding: 5% 0;
+}
+
+.landing .container .content div {
+	width: 50%;
+	height: 100%;
+	padding: 0 30px;
+}
+
+.landing .container .content div hr {
+	border-top: 2px solid var(--color-1);
+}
+
+.landing .container .content div p {
+	font-family: var(--font-head);
+	font-size: 18px;
+	color: var(--color-1);
+	margin-bottom: -15px;
+}
+
+.landing .container .content .daftar {
+	border-right: 1px solid var(--color-2);
+}
+
+.landing .container .content .daftar a {
+	background-color: var(--color-4);
+	width: 100%;
+}
+
+.landing .container .content .masuk {
+	border-left: 1px solid var(--color-2);
+}
+
+.landing .container .content .masuk form {
+	width: 100%;
+}
+
+.landing .container .content .masuk form li {
+	width: 100%;
+	list-style-type: none;
+	margin-bottom: 10px;
+}
+
+.landing .container .content .masuk form li label {
+	font-size: 12px;
+}
+
+.landing .container .content .masuk form button {
+	width: 100%;
+	background-color: var(--color-2);
+	color: #fff;
+	border: none;
+	font-size: 16px;
+	padding: 6px;
+	margin-top: 20px;
+	border-radius: 4px;
+}
+
+
+/* DAFTAR ===================================================================================================*/
+.daftar {
+	width: 100%;
+	padding: 20px 50px;
+}
+
+.daftar .logo {
+	text-decoration: none;
+	color: var(--color-1);
+}
+
+.daftar .logo img {
+	width: 40px;
+	height: 40px;
+}
+
+.daftar .daftar-form {
+	width: 550px;
+	height: 500px;
+	margin: auto;
+	padding: 40px 20px;
+}
+
+.daftar .daftar-form h1 {
+	font-size: 32px;
+	font-family: var(--font-head);
+	width: 100%;
+	text-align: center;
+	margin-bottom: 10px;
+}
+
+.daftar .daftar-form form {
+	width: 100%;
+}
+
+.daftar .daftar-form .input-section {
+	width: 100%;
+	margin-bottom: 20px;
+}
+
+.daftar .daftar-form .input-section label {
+	font-size: 18px;
+	font-family: var(--font-head);
+}
+
+.daftar .daftar-form .input-section input {
+	width: 100%;
+	padding: 6px;
+	font-size: 14px;
+}
+
+.daftar .daftar-form button {
+	width: 100%;
+	background-color: var(--color-1);
+	color: #fff;
+	margin-top: 40px;
+	padding: 10px;
+}
+
+
+/* Navbar ===================================================================================================*/
+.nav {
+	width: 80px;
+	height: 100vh;
+	position: fixed;
+	top: 0;
+	left: 0;
+	border-right: 2px solid var(--color-1);
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	background-color: #fff;
+	z-index: 100;
+}
+
+.nav .logo-nav {
+	margin-top: -20px;
+}
+
+.nav .logo-nav img {
+	width: ;
+}
+
+.nav img {
+	width: 25px;
+	height: 25px;
+	margin-bottom: 20px;
+}
+
+.nav .menu-nav {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	padding: 0 20px;
+}
+
+.nav .menu-nav a {
+	margin-bottom: 5px;
+}
+
+.nav .menu-nav .line-menu-nav {
+	width: 100%;
+	height: 2px;
+	background-color: var(--color-3);
+	margin-bottom: 20px;
+}
+
+.nav .account-nav img {
+	border-radius: 20px;
+}
+/* Home =========================================================================================== */
+.home .top {
+	width: 100%;
+	height: 100px;
+	padding: 40px 0 20px 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.home .top .search-bar {
+	width: 500px;
+	display: flex;
+	border: 1px solid var(--color-3);
+	border-radius: 4px;
+	overflow: hidden;
+}
+
+.home .top .search-bar .cari {
+	background-color: var(--color-4);
+}
+
+.home .top .search-bar input {
+	border: none;
+}
+
+.home .top .search-bar img {
+	width: 20px;
+}
+
+.home .content {
+	padding: 0;
+	padding-top: 20px;
+}
+
+.home .content .menu {
+	width: 100%;
+	height: 30px;
+	border-bottom: 1px solid var(--color-3);
+	display: flex;
+	padding: 0 10px;
+}
+
+.home .content .post-box {
+	width: 100%;
+	padding: 0 20px;
+	border-bottom: 1px solid var(--color-3);
+	padding: 20px 0;
+}
+
+.home .content .post-box .penulis {
+	display: flex;
+	text-decoration: none;
+}
+
+.home .content .post-box .penulis img {
+	width: 28px;
+	height: 28px;
+	border-radius: 20px;
+	margin-right: 12px;
+}
+
+.home .content .post-box .penulis p {
+	font-size: 16px;
+	font-family: var(--font-head);
+	font-weight: 700;
+}
+
+.home .content .post-box .detail {
+	text-decoration: none;
+	width: 100%;
+}
+
+.home .content .post-box .detail .judul {
+	font-size: 22px;
+	font-weight: bold;
+}
+
+.home .content .post-box .detail .isi {
+	text-align: justify-all;
+	font-size: 15px;
+	margin-top: -10px;
+}
+
+.home .content .tidak-ada p {
+	width: 100%;
+	padding-top: 160px;
+	font-size: 25px;
+	text-transform: uppercase;
+	font-weight: 700;
+	color: var(--color-5);
+	text-align: center;
+	font-family: var(--font-head);
+	opacity: 70%;
+}
+
+/* Account =========================================================================================*/
+.account {
+	height: 100vh;
+	overflow: auto;
+	display: flex;
+	flex-wrap: wrap;
+	align-content: flex-start;
+}
+
+.account .profile {
+	width: 100%;
+	height: 250px;
+	display: flex;
+	justify-content: space-between;	
+}
+
+.account .profile .left {
+	padding: 50px 0;
+	display: flex;
+}
+
+.account .profile .left img {
+	width: 160px;
+	height: 160px;
+	border-radius: 100px;
+}
+
+.account .profile .left .title {
+	display: inline-block;
+	margin-left: 50px;
+	padding: 20px 0;
+	text-transform: capitalize;
+}
+
+.account .profile .left .title p {
+	color: var(--color-1);
+	font-family: var(--font-head);
+	font-size: 45px;
+	font-weight: 600;
+}
+
+.account .profile .left .title a {
+	padding: 10px 40px;
+	font-size: 16px;
+	text-decoration: none;
+	color: #fff;
+	background-color: var(--color-3);
+	transition: 0.2s ease;
+}
+
+.account .profile .left .title a:hover {
+	background-color: var(--color-2);
+}
+
+.account .profile .right {
+	height: 100%;
+	padding-top: 70px;
+}
+
+.account .profile .right a {
+	padding: 5px 25px;
+	font-size: 16px;
+	background-color: #e5989b;
+	color: #fff;
+	text-decoration: none;
+	transition: .2s ease;
+}
+
+.account .profile .right a:hover {
+	border-radius: 5px;
+	background-color: #c9184a;
+}
+
+.account .post {
+	width: 100%;
+}
+
+.account .post h1 {
+	font-size: 35px;
+	font-family: var(--font-head);
+	width: 100%;
+	border-bottom: 1px solid var(--color-1);
+
+	padding: 15px 0; 
+	position: sticky;
+	top: 0;
+	left: 0;
+	background-color: #fff;
+}
+
+.account .post hr {
+	border-top: 1px solid var(--color-1);
+}
+
+.account .post a {
+	color: var(--color-1);
+	text-decoration: none;
+}
+
+.account .post .post-box {
+	width: 100%;
+	border-bottom: 1px solid var(--color-3);
+	padding: 20px 0;
+}
+
+.account .post .post-box h2 {
+	font-size: 18px;
+	font-weight: bolder;
+}
+
+.account .post .post-box p {
+	font-size: 15px;
+	margin-bottom: 0;
+}
+
+.account .post .post-box .option {
+	width: 100%;
+	display: flex;
+	justify-content: flex-end;
+	padding-right: 50px;
+}
+
+.account .post .post-box .option a {
+	font-size: 25px;
+} 
+
+
+
+/* Following ===================================================================================*/
+.following {
+	width: 100%;
+}
+
+.following .top {
+	width: 100%;
+	height: 120px;
+	border-bottom: 1px solid var(--color-2);
+	display: flex;
+	align-items: center;
+	padding: 0 20px;
+	position: relative;
+}
+
+.following .top h1 {
+	font-family: var(--font-head);
+	font-weight: bolder;
+	width: 150px;
+}
+
+.following .top .right {
+	display: flex;
+	justify-content: right;
+	width: 100%;
+}
+
+.following .top form {
+	display: flex;
+	margin-right: 60px;
+}
+
+.following .top form button {
+	font-size: 12px;
+}
+
+.following .top a img {
+	width: 30px;
+	height: 30px;
+	margin-right: 20px;
+	border-radius: 20px;
+}
+
+.following .content {
+	padding: 20px 280px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-content: flex-start;
+}
+
+.following .content h1 {
+	width: 100%;
+	font-size: 25px;
+	padding-bottom: 20px;
+	border-bottom: 1px solid var(--color-2);
+}
+
+.following .content .user-follow {
+	width: 100%;
+	padding: 20px;
+	border-bottom: 1px solid var(--color-3);
+	display: flex;
+	align-items: center;
+	position: relative;
+}
+
+.following .content .user-follow img {
+	width: 60px;
+	height: 60px;
+	border-radius: 100px;
+	margin-right: 20px;
+	text-decoration: none;
+}
+
+.following .content a p {
+	color: var(--color-1);
+	font-family: var(--font-head);
+	font-size: 20px;
+}
+
+.following .content .user-follow button {
+	position: absolute;
+	right: 20px;
+	border: 1px solid var(--color-1);
+}
+
+.following .content .user-follow button:hover {
+	background-color: var(--color-4);
+}
+
+/* Post */
+.post {
+	padding-top: 50px;
+}
+
+.post .profile {
+	height: 60px;
+	display: flex;
+	text-decoration: none;
+	align-items: center;
+	margin-bottom: 30px;
+}
+
+.post .profile img {
+	width: 50px;
+	height: 50px;
+	border-radius: 30px;
+	margin-right: 20px;
+}
+
+.post .profile .detail {
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.post .profile p {
+	font-size: 20px;
+	font-family: var(--font-head);
+	font-weight: bold;
+	width: 100%;
+	margin-bottom: 0;
+}
+
+.post .profile .tgl {
+	font-size: 14px;
+	color: var(--color-2);
+	font-family: var(--font);
+	font-weight: normal;
+}
+
+.post .content h1 {
+	font-size: 24px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+.post .kesalahan {
+	width: 100%;
+	height: calc(100vh - 50px);
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	align-content: center;
+}
+
+.post .kesalahan h1 {
+	width: 100%;
+	font-family: var(--font-logo);
+	color: var(--color-2);
+	text-align: center;
+}
+
+.post .kesalahan a {
+	padding: 10px 20px;
+	font-size: 16px;
+	background-color: var(--color-2);
+	color: #fff;
+	border-radius: 5px;
+	text-transform: uppercase;
+	text-decoration: none;
+	transition: .2s ease;
+}
+
+.post .kesalahan a:hover {
+	background-color: var(--color-1);
+}
+
+/* Write ========================================================================================== */
+.write .top {
+	width: 100%;
+	height: 100px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 80px;
+}
+
+.write .top img {
+	width: 100%;
+	height: 100%;
+}
+
+.write .top .logo {
+	width: 35px;
+	height: 35px;
+}
+
+.write .top .account {
+	width: 35px;
+	height: 35px;
+	border-radius: 20px;
+}
+
+.write .create {
+	width: 100%;
+	padding: 0 150px;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.write .create .paper {
+	width: 100%;
+}
+
+.write .create input {
+	width: 100%;
+	font-size: 40px;
+	font-weight: bold;
+	font-family: var(--font-head);
+	outline: none;
+	border: none;
+	margin-bottom: 20px;
+}
+
+.write .create textarea {
+	width: 100%;
+	height: 340px;
+	outline: none;
+	border: none;
+	font-size: 18px;
+}
+
+
+::placeholder {
+	color: var(--color-3);
+}
+
+::ms-input-placeholder {
+	color: var(--color-3);
+}
+
+.button-publish {
+	width: 100%;
+	display: flex;
+	justify-content: flex-end;
+}
+
+.button-publish button {
+	color: var(--color-4);
+	background-color: var(--color-2);
+	font-weight: bold;
+}

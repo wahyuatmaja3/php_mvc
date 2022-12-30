@@ -1,0 +1,18 @@
+Database: arch
+
+Table
+
+User {
+  id_user
+  username
+  pass_user
+  pengikut
+}
+
+Post {
+  id_post
+  penulis
+  date
+  header
+  content
+}

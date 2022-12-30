@@ -1,0 +1,25 @@
+.container1 {
+	width: 100%;
+	padding: 80px 60px;
+}
+
+.profile {
+	width: 100%;
+	background-color: #f5f5f5;
+	padding: 0 20px;
+}
+
+.profile-img {
+	width: 180px;
+	height: 180px;
+	border-radius: 200px;
+	border: 2px solid #9aa07e;
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
+}
+
+.profile-img img {
+	width: 120%;
+	height: 120%;
+}

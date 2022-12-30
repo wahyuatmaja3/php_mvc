@@ -1,0 +1,17 @@
+Database : &v
+
+Table :
+
+Spaces {
+	id_spaces [int],
+	name_spaces [text],
+	member_list
+}
+
+Account {
+	id_account [int],
+	name_user [varchar 200],
+	following [text],
+	question [text],
+	answer [text],
+}

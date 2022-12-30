@@ -1,0 +1,76 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: verdana;
+}
+
+.navbar {
+	width: 100%;
+	padding: 0 50px;
+	height: 60px;
+	box-shadow: 0 1px 10px 2px rgba(0, 0, 0, .1);
+	background-color: #ffffff;
+	border-bottom: 1px solid #555;
+	position: fixed;
+	z-index: 100;
+}
+
+.navbar ul {
+	list-style-type: none;
+}
+
+.navbar .logo {
+	flex: 1;
+}
+
+.navbar .logo h1 a {
+	font-family: papyrus;
+	text-decoration: none;
+	color: #6a7553;
+}
+
+.navbar .menu {
+	flex: 7;
+}
+
+.navbar ul li {
+	display: inline-block;
+	margin: 0 10px;
+}
+
+.navbar ul li a, .navbar .right a {
+	font-size: 15px;
+	color: #6a7553;
+	text-decoration: none;
+}
+
+.navbar .right {
+	flex: 12;
+}
+
+.navbar .right form {
+	width: 50%;
+	display: inline-block;
+
+	margin-right: 40px;
+}
+
+.navbar .right form input[type='text'] {
+	width: 100%;
+	height: 30px;
+	font-size: 14px;
+	padding: 2px 0 4px 10px;
+}
+
+.navbar .right #button-add {
+	padding: 5px 40px;
+	border: 1px solid;
+	margin-left: 20px;
+	background-color: ;
+	transition: .2s ease;
+}
+
+.navbar .right #button-add:hover {
+	background-color: #e9ecef;
+}
